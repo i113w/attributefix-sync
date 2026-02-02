@@ -36,8 +36,14 @@
 
 ## 配置文件
 
-本模组**没有**配置文件。
-它直接读取服务端上 `AttributeFix` 已经生效的数值。如果你需要修改属性上限，请修改 `AttributeFix` 原本生成的配置文件（位于 `config/attributefix/` 下）。
+客户端配置文件位于 `config/attributefixsync-client.toml`。
+
+| 选项 | 默认值 | 描述 |
+| :--- | :--- | :--- |
+| `enableSync` | `true` | 是否允许从服务端同步属性限制。 |
+| `showSyncMessages` | `true` | 是否在同步完成后于聊天栏显示提示信息。 |
+
+*注意：本模组仅负责同步。如果你需要修改属性的具体数值（如最大生命值），请修改 **AttributeFix** 原本生成的配置文件（位于 `config/attributefix/` 下）。*
 
 ## 许可证与致谢
 
