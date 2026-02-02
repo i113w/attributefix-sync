@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.i113w.attributefixsync.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "attributefixsync.refmap.json",
+  "mixins": [
+    "RangedAttributeAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

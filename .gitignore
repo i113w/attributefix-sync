@@ -1,0 +1,39 @@
+.gradle/
+build/
+out/
+bin/
+
+# Eclipse
+.eclipse/
+*.launch
+.settings/
+.project
+.classpath
+
+# IDEA
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/dictionaries
+.idea/shelf
+.idea
+.vscode
+.gitattributes
+*.iml
+*.ipr
+*.iws
+
+# run
+run/
+logs/
+crash-reports/
+debug.log
+debug.log.gz
+latest.log
+
+.DS_Store
+Thumbs.db
+
+*.jar
+!libs/*.jar
+*.code-workspace

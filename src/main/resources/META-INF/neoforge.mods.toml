@@ -1,0 +1,47 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "${mod_license}"
+# 如果你有GitHub仓库，可以填写真实的地址，否则保留默认或留空
+issueTrackerURL = "https://github.com/"
+
+[[mods]]
+modId = "${mod_id}"
+version = "${mod_version}"
+displayName = "${mod_name}"
+# 如果你有项目主页，可以填在这里
+displayURL = "https://github.com/"
+# 如果你以后画了图标，放在 resources 根目录叫 logo.png，然后取消下面的注释
+# logoFile = "logo.png"
+authors = "${mod_authors}"
+description = "${mod_description}"
+
+# 注册 Mixin 配置文件
+[[mixins]]
+config = "attributefixsync.mixins.json"
+
+# --- 依赖关系配置 ---
+# 注意：这里直接写死 modId "attributefixsync" 以避免 IDE 语法报错
+
+# 1. 依赖 NeoForge
+[[dependencies.attributefixsync]]
+modId = "neoforge"
+type = "required"
+versionRange = "${neo_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+# 2. 依赖 Minecraft
+[[dependencies.attributefixsync]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+# 3. 依赖 AttributeFix (因为我们是它的附属)
+[[dependencies.attributefixsync]]
+modId = "attributefix"
+type = "required"
+versionRange = "[21.1,)" # 允许 21.1 及以上版本
+ordering = "NONE"
+side = "BOTH"
