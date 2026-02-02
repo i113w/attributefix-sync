@@ -2,16 +2,16 @@ modLoader = "javafml"
 loaderVersion = "${loader_version_range}"
 license = "${mod_license}"
 # 如果你有GitHub仓库，可以填写真实的地址，否则保留默认或留空
-issueTrackerURL = "https://github.com/"
+issueTrackerURL = "https://github.com/i113w/attributefix-sync/issues"
 
 [[mods]]
 modId = "${mod_id}"
 version = "${mod_version}"
 displayName = "${mod_name}"
 # 如果你有项目主页，可以填在这里
-displayURL = "https://github.com/"
+displayURL = "https://github.com/i113w/attributefix-sync"
 # 如果你以后画了图标，放在 resources 根目录叫 logo.png，然后取消下面的注释
-# logoFile = "logo.png"
+logoFile = "logo.png"
 authors = "${mod_authors}"
 description = "${mod_description}"
 

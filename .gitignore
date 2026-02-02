@@ -37,3 +37,7 @@ Thumbs.db
 *.jar
 !libs/*.jar
 *.code-workspace
+*.py
+*.md
+!README.md
+!README_CN.md
